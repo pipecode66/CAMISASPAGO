@@ -48,24 +48,6 @@ export function HeroSection() {
               </Link>
             </Button>
           </div>
-
-          <div className="grid max-w-lg grid-cols-3 gap-3">
-            {[
-              { label: "Algodon premium", value: "280 gsm" },
-              { label: "Envio nacional", value: "48 h" },
-              { label: "Cambios faciles", value: "7 dias" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="rounded-[1.7rem] border border-black/8 bg-white/72 px-4 py-5 shadow-[0_25px_80px_rgba(20,20,20,0.06)] backdrop-blur"
-              >
-                <p className="text-lg font-semibold">{item.value}</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                  {item.label}
-                </p>
-              </div>
-            ))}
-          </div>
         </Reveal>
 
         <Reveal delay={0.08} className="relative">

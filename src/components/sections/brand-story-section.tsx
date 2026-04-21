@@ -12,10 +12,9 @@ export function BrandStorySection() {
             title="Una marca propia pensada para vender camisetas con identidad."
             description="SABLE mezcla un lenguaje visual limpio, una actitud urbana contenida y una experiencia de compra pensada para conversion, confianza y deseo."
           />
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2">
             {[
               { value: "14", label: "Referencias activas" },
-              { value: "280 gsm", label: "Tela protagonista" },
               { value: "24/7", label: "Atencion digital" },
             ].map((item) => (
               <div
