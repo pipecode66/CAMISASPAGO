@@ -1,0 +1,3 @@
+export const FREE_SHIPPING_THRESHOLD = 180000
+export const DEFAULT_MAX_PRICE = 220000
+export const DEFAULT_COUPON = "SABLE10"
