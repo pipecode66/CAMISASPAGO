@@ -9,13 +9,13 @@ import { ColorSwatches } from "@/components/commerce/color-swatches"
 import { PriceBlock } from "@/components/commerce/price-block"
 import { QuantityStepper } from "@/components/commerce/quantity-stepper"
 import { SizeSelector } from "@/components/commerce/size-selector"
+import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
 import { useCartStore } from "@/store/cart-store"
 import type { Product } from "@/types/product"
 
@@ -75,7 +75,12 @@ function QuickViewDialogContent({
     })
 
     toast.success("Producto agregado al carrito", {
-      description: `${product.name} · ${selectedSize} · ${activeColor.name}`,
+      description: (
+        <span>
+          <span className="product-name">{product.name}</span> / {selectedSize} /{" "}
+          {activeColor.name}
+        </span>
+      ),
     })
     onOpenChange(false)
   }
@@ -83,7 +88,7 @@ function QuickViewDialogContent({
   return (
     <DialogContent className="max-h-[92vh] max-w-5xl overflow-auto rounded-[2rem] border border-black/8 bg-white p-5 sm:p-6">
       <DialogHeader className="sr-only">
-        <DialogTitle>{product.name}</DialogTitle>
+        <DialogTitle className="product-name">{product.name}</DialogTitle>
       </DialogHeader>
 
       <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
@@ -120,14 +125,16 @@ function QuickViewDialogContent({
         <div className="space-y-6">
           <div className="space-y-3">
             <p className="eyebrow">Vista rapida</p>
-            <h3 className="font-display text-4xl tracking-[-0.05em]">{product.name}</h3>
+            <h3 className="product-name font-display text-4xl tracking-[-0.05em]">
+              {product.name}
+            </h3>
             <PriceBlock price={product.price} compareAtPrice={product.compareAtPrice} />
             <p className="text-sm leading-7 text-muted-foreground">
               {product.description}
             </p>
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.18em] text-muted-foreground">
               <span>Fit {product.fit}</span>
-              <span>·</span>
+              <span>/</span>
               <span>{product.stock > 8 ? "Stock disponible" : `Quedan ${product.stock}`}</span>
             </div>
           </div>

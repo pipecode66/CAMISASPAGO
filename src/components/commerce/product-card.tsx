@@ -7,8 +7,8 @@ import { motion } from "framer-motion"
 import { toast } from "sonner"
 
 import { PriceBlock } from "@/components/commerce/price-block"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { useCartStore } from "@/store/cart-store"
 import { useWishlistStore } from "@/store/wishlist-store"
 import type { Product, ShirtSize } from "@/types/product"
@@ -44,9 +44,18 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
       stock: product.stock,
     })
 
-    toast.success(`${product.name} agregado al carrito`, {
-      description: `Talla ${size} · ${color.name}`,
-    })
+    toast.success(
+      <span>
+        <span className="product-name">{product.name}</span> agregado al carrito
+      </span>,
+      {
+        description: (
+          <span>
+            Talla {size} / {color.name}
+          </span>
+        ),
+      }
+    )
   }
 
   return (
@@ -124,7 +133,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
             <div>
               <Link
                 href={`/camisetas/${product.slug}`}
-                className="font-medium tracking-[-0.03em] text-foreground"
+                className="product-name font-medium tracking-[-0.03em] text-foreground"
               >
                 {product.name}
               </Link>

@@ -68,9 +68,11 @@ export function CartDrawer() {
                       <div className="flex-1 space-y-3">
                         <div className="flex items-start justify-between gap-3">
                           <div>
-                            <p className="font-medium tracking-[-0.03em]">{item.name}</p>
+                            <p className="product-name font-medium tracking-[-0.03em]">
+                              {item.name}
+                            </p>
                             <p className="text-sm text-muted-foreground">
-                              {item.colorName} · {item.size}
+                              {item.colorName} / {item.size}
                             </p>
                           </div>
                           <button

@@ -2,6 +2,12 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@font-face {
+  font-family: "Etokgriya";
+  src: local("Etokgriya"), local("Etokgriya Font");
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -119,7 +125,7 @@
 
 @layer base {
   html {
-    font-family: var(--font-sans), ui-sans-serif, sans-serif;
+    font-family: "Etokgriya", var(--font-display), var(--font-sans), Georgia, serif;
     scroll-behavior: smooth;
   }
   * {
@@ -130,8 +136,16 @@
     background-image:
       radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), transparent 22%),
       linear-gradient(180deg, rgba(255, 255, 255, 0.38), transparent 22%);
-    font-family: var(--font-sans), ui-sans-serif, sans-serif;
+    font-family: "Etokgriya", var(--font-display), var(--font-sans), Georgia, serif;
     text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+    text-transform: inherit;
   }
   h1,
   h2,
@@ -152,7 +166,11 @@
   }
 
   .font-display {
-    font-family: var(--font-display), Georgia, serif;
+    font-family: "Etokgriya", var(--font-display), var(--font-sans), Georgia, serif;
+  }
+
+  .font-heading {
+    font-family: "Etokgriya", var(--font-display), var(--font-sans), Georgia, serif !important;
   }
 
   .section-space {
@@ -171,6 +189,10 @@
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  .product-name {
+    text-transform: none;
   }
 }
 

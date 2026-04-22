@@ -74,7 +74,7 @@ export default function RootLayout({
       lang="es"
       className={`${urbanist.variable} ${cormorant.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className="min-h-screen bg-background text-foreground antialiased uppercase">
         <AppProviders>
           <div className="relative flex min-h-screen flex-col">
             <TopPromoBar />

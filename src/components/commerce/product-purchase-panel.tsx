@@ -54,7 +54,12 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
   function handleAddToCart() {
     addCurrentItem()
     toast.success("Agregado al carrito", {
-      description: `${product.name} · ${selectedSize} · ${activeColor.name}`,
+      description: (
+        <span>
+          <span className="product-name">{product.name}</span> / {selectedSize} /{" "}
+          {activeColor.name}
+        </span>
+      ),
     })
   }
 
@@ -68,16 +73,16 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
       <div className="space-y-4">
         <p className="eyebrow">PDP premium</p>
         <div className="space-y-3">
-          <h1 className="font-display text-5xl tracking-[-0.05em] text-balance">
+          <h1 className="product-name font-display text-5xl tracking-[-0.05em] text-balance">
             {product.name}
           </h1>
           <PriceBlock price={product.price} compareAtPrice={product.compareAtPrice} />
         </div>
         <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.18em] text-muted-foreground">
           <span>{product.stock > 0 ? "Disponible" : "Agotado"}</span>
-          <span>·</span>
+          <span>/</span>
           <span>Fit {product.fit}</span>
-          <span>·</span>
+          <span>/</span>
           <span>{product.material}</span>
         </div>
         <p className="text-sm leading-7 text-muted-foreground">{product.description}</p>

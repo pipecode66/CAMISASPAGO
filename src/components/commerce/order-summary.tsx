@@ -46,7 +46,7 @@ export function OrderSummary({
               <div className="flex-1 space-y-2">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="font-medium">{item.name}</p>
+                    <p className="product-name font-medium">{item.name}</p>
                     <p className="text-sm text-muted-foreground">
                       {item.colorName} / {item.size}
                     </p>
