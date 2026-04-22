@@ -1,4 +1,5 @@
 import { BrandStorySection } from "@/components/sections/brand-story-section"
+import { AutoProductCarouselSection } from "@/components/sections/auto-product-carousel-section"
 import { CategoryShowcaseSection } from "@/components/sections/category-showcase-section"
 import { HeroSection } from "@/components/sections/hero-section"
 import { NewsletterSection } from "@/components/sections/newsletter-section"
@@ -16,6 +17,7 @@ export default async function HomePage() {
   return (
     <>
       <HeroSection />
+      <AutoProductCarouselSection products={products} />
       <CategoryShowcaseSection />
       <ProductRecommendations
         title="Nuevos ingresos con lenguaje editorial."
