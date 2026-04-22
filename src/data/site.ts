@@ -34,6 +34,31 @@ export const navigationItems = [
   { label: "Nosotros", href: "/#nosotros" },
 ]
 
+export const desktopPrimaryNavLeft = [
+  { label: "Nuevo", href: "/camisetas?sort=newest" },
+  { label: "Colombia", href: "/#nosotros", accent: true },
+  { label: "Sale", href: "/camisetas?sale=true", accent: true },
+  { label: "Oversized", href: "/camisetas?search=oversized" },
+  { label: "Regular", href: "/camisetas?search=regular" },
+  { label: "Colecciones", href: "/#coleccion" },
+]
+
+export const desktopPrimaryNavRight = [
+  { label: "Infaltables", href: "/camisetas?sort=featured" },
+  { label: "Nosotros", href: "/#nosotros" },
+  { label: "Guia de tallas", href: "/camisetas/essential-oversized-tee-black" },
+]
+
+export const desktopSecondaryNav = [
+  { label: "Camisetas oversized", href: "/camisetas?search=oversized" },
+  { label: "Regular fit", href: "/camisetas?search=regular" },
+  { label: "Basicas", href: "/camisetas?search=basicas" },
+  { label: "Graficas", href: "/camisetas?search=graficas" },
+  { label: "Edicion limitada", href: "/camisetas?search=edicion%20limitada" },
+  { label: "Nuevas", href: "/camisetas?sort=newest" },
+  { label: "Ver todo", href: "/camisetas" },
+]
+
 export const categoryShowcase: Array<{
   name: string
   slug: ProductCategory
