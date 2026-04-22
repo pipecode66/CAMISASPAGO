@@ -56,7 +56,7 @@ export function CartDrawer() {
                     className="rounded-[1.5rem] border border-black/8 bg-muted/20 p-4"
                   >
                     <div className="flex gap-4">
-                      <div className="relative aspect-[4/5] w-24 overflow-hidden rounded-[1rem] bg-[#ece7df]">
+                      <div className="relative aspect-[4/5] w-24 overflow-hidden rounded-[1rem] bg-[#f1f1f1]">
                         <Image
                           src={item.image}
                           alt={item.name}

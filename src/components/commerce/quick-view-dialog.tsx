@@ -93,7 +93,7 @@ function QuickViewDialogContent({
 
       <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="space-y-4">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-[#ece7df]">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-[#f1f1f1]">
             <Image
               src={activeImage.src}
               alt={activeImage.alt}
@@ -108,7 +108,7 @@ function QuickViewDialogContent({
                 key={image.src}
                 type="button"
                 onClick={() => setSelectedImage(index)}
-                className="relative aspect-[4/5] overflow-hidden rounded-[1rem] border border-black/8 bg-[#ece7df]"
+                className="relative aspect-[4/5] overflow-hidden rounded-[1rem] border border-black/8 bg-[#f1f1f1]"
               >
                 <Image
                   src={image.src}

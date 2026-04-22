@@ -65,7 +65,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
       whileHover={{ y: -4 }}
       transition={{ duration: 0.25 }}
     >
-      <div className="relative overflow-hidden bg-[#ece7df]">
+      <div className="relative overflow-hidden bg-[#f1f1f1]">
         <Link href={`/camisetas/${product.slug}`} className="block">
           <div className="relative aspect-[4/5]">
             <Image

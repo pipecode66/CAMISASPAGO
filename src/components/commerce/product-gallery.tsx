@@ -26,7 +26,7 @@ export function ProductGallery({ name, images }: ProductGalleryProps) {
             type="button"
             onClick={() => setActiveIndex(index)}
             className={cn(
-              "relative aspect-[4/5] w-20 shrink-0 overflow-hidden rounded-[1.2rem] border bg-[#ece7df] lg:w-full",
+              "relative aspect-[4/5] w-20 shrink-0 overflow-hidden rounded-[1.2rem] border bg-[#f1f1f1] lg:w-full",
               index === activeIndex ? "border-foreground" : "border-black/8"
             )}
           >
@@ -41,7 +41,7 @@ export function ProductGallery({ name, images }: ProductGalleryProps) {
         ))}
       </div>
 
-      <div className="order-1 overflow-hidden rounded-[2rem] border border-black/8 bg-[#ece7df]">
+      <div className="order-1 overflow-hidden rounded-[2rem] border border-black/8 bg-[#f1f1f1]">
         <div
           className="group relative aspect-[4/5] overflow-hidden"
           onMouseMove={(event) => {

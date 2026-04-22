@@ -138,8 +138,10 @@ export function SiteHeader() {
             <div className="flex items-center gap-3">
               <span
                 aria-label="Colombia"
-                className="inline-flex size-9 items-center justify-center rounded-full border border-black/8 bg-[linear-gradient(180deg,#f5d300_0%,#f5d300_50%,#1c58b5_50%,#1c58b5_75%,#d8382c_75%,#d8382c_100%)] shadow-[0_8px_18px_rgba(15,15,15,0.08)]"
-              />
+                className="inline-flex size-9 items-center justify-center rounded-full border border-black/8 bg-white text-[0.58rem] font-semibold tracking-[0.18em] text-foreground shadow-[0_8px_18px_rgba(15,15,15,0.08)]"
+              >
+                CO
+              </span>
               <SearchDialog triggerClassName="rounded-full" />
               <Button asChild variant="ghost" size="icon" className="rounded-full">
                 <Link href="/cuenta" aria-label="Cuenta">

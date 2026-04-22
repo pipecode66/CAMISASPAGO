@@ -54,7 +54,7 @@ export function NewsletterSection() {
   return (
     <section id="newsletter" className="section-space">
       <div className="container">
-        <div className="grid gap-10 rounded-[2.5rem] border border-black/8 bg-[#111111] px-6 py-10 text-white shadow-[0_24px_100px_rgba(17,17,17,0.18)] lg:grid-cols-[1fr_0.9fr] lg:px-12 lg:py-14">
+        <div className="grid gap-10 rounded-[2.5rem] border border-black/10 bg-black px-6 py-10 text-white shadow-[0_24px_100px_rgba(17,17,17,0.18)] lg:grid-cols-[1fr_0.9fr] lg:px-12 lg:py-14">
           <SectionHeading
             eyebrow="10% OFF EN TU PRIMERA ORDEN"
             title="Entra antes al siguiente drop de camisetas."
@@ -71,7 +71,7 @@ export function NewsletterSection() {
               />
             </div>
             {errors.email ? (
-              <p className="text-sm text-[#ffb4b4]">{errors.email.message}</p>
+              <p className="text-sm text-white/72">{errors.email.message}</p>
             ) : null}
             <Button
               type="submit"

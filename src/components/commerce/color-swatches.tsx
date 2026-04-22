@@ -36,7 +36,10 @@ export function ColorSwatches({
             aria-label={`Seleccionar color ${color.name}`}
           >
             <span
-              className={cn("rounded-full border border-black/10", size === "sm" ? "size-5" : "size-6")}
+              className={cn(
+                "rounded-full border border-black/10 grayscale",
+                size === "sm" ? "size-5" : "size-6"
+              )}
               style={{ backgroundColor: color.hex }}
             />
           </button>

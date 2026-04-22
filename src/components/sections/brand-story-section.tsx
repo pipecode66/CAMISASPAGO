@@ -30,7 +30,7 @@ export function BrandStorySection() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-black/8 bg-[#ded6cc] p-3 shadow-[0_24px_100px_rgba(20,20,20,0.08)]">
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-black/8 bg-[#d7d7d7] p-3 shadow-[0_24px_100px_rgba(20,20,20,0.08)]">
           <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem]">
             <Image
               src="/images/hero/editorial-02.png"

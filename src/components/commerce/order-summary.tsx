@@ -34,7 +34,7 @@ export function OrderSummary({
               key={item.id}
               className="flex gap-4 rounded-[1.5rem] bg-muted/35 p-3"
             >
-              <div className="relative aspect-[4/5] w-20 overflow-hidden rounded-[1rem] bg-[#ece7df]">
+              <div className="relative aspect-[4/5] w-20 overflow-hidden rounded-[1rem] bg-[#f1f1f1]">
                 <Image
                   src={item.image}
                   alt={item.name}

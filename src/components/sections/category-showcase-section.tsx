@@ -22,7 +22,7 @@ export function CategoryShowcaseSection() {
             <Reveal key={category.slug} delay={index * 0.04}>
               <Link
                 href={`/camisetas?search=${encodeURIComponent(category.name)}`}
-                className="group relative block overflow-hidden rounded-[2rem] border border-black/8 bg-[#ece8e2] p-3"
+                className="group relative block overflow-hidden rounded-[2rem] border border-black/8 bg-[#f1f1f1] p-3"
               >
                 <div className="relative aspect-[4/4.6] overflow-hidden rounded-[1.5rem]">
                   <Image
@@ -33,7 +33,7 @@ export function CategoryShowcaseSection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                   />
                 </div>
-                <div className="absolute inset-x-7 bottom-7 rounded-[1.5rem] border border-white/40 bg-white/90 p-5 backdrop-blur">
+                <div className="absolute inset-x-7 bottom-7 rounded-[1.5rem] border border-white/60 bg-white/92 p-5 backdrop-blur">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <p className="font-display text-3xl tracking-[-0.04em] text-foreground">

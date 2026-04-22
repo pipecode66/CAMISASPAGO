@@ -139,7 +139,7 @@ export function AutoProductCarouselSection({
                 style={{ width: `${itemWidth}%` }}
               >
                 <Link href={`/camisetas/${product.slug}`} className="block">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-[#f2efe9]">
+                  <div className="relative aspect-[4/5] overflow-hidden bg-[#f1f1f1]">
                     <Image
                       src={product.images[0]?.src ?? ""}
                       alt={product.images[0]?.alt ?? product.name}
